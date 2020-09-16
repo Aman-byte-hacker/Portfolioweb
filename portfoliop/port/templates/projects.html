@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block style %}
+<style>
+    .course{
+        border: 2px solid black;
+        width: 70%;
+        height: 200px;
+        margin-left: 15%;
+        margin-top: 42px;
+    }
+    .btni{
+        padding: 12px;
+        border-radius:9px;
+        background-color: black;
+        color: green;
+    }
+    @media screen and (max-width: 480px) {
+        .course{
+            margin-bottom: 4px;
+            height: 250px;
+        }
+      }
+</style>
+{% endblock %}
+{% block content %}
+<h3 style="text-align: center; margin-top:6px;">My Big-stack Projects</h3>
+<div class="course">
+    <h3 style="text-align: center; margin-top:26px;">Course-Selling-Web</h3>
+    <p style="text-align: center; text-transform:capitalize;">I used django for backend for this website anybody
+        can signup and buy the course from website and then acsess to the course.
+    </p>
+    <p style="text-align: center;">Link:<a target="_blank" href="https://vyasbyte.pythonanywhere.com">Course-Selling-Web</a></p>
+</div>
+<div class="course">
+    <h3 style="text-align: center; margin-top:26px;">Blog-Website</h3>
+    <p style="text-align: center; text-transform:capitalize;">I used django for backend for this website admin
+        can upload blogs and after login from facebook user can comment on blog.
+    </p>
+    <p style="text-align: center;">Link:<a target="_blank" href="https://vyasvlog.pythonanywhere.com">Blog-Web</a></p>
+</div>
+<p style="text-align: center;"><a href="/"><button class="btni" type="submit"><--Home</button></a></p>
+{% endblock %}

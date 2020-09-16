@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block style %}
+<style>
+    
+    .img{
+        width: 100%;
+        height: 50%;
+    }
+    .btni{
+        padding: 12px;
+        border-radius:9px;
+        background-color: black;
+        color: green;
+    }
+</style>
+{% endblock %}
+{% block content %}
+{% load static %}
+<h3 style="text-align: center; margin-top:6px;">My Certificates</h3>
+<img class="img" src="{% static 'fullstack.jpg' %}" alt="">
+<img class="img" src="{% static 'python3.jpg' %}" alt="">
+<img class="img" src="{% static 'business.jpg' %}" alt="">
+<img class="img" src="{% static 'nodejs.jpg' %}" alt="">
+<p style="text-align: center;"><a href="/contact"><button class="btni" type="submit">Contact Me</button></a></p>
+
+{% endblock %}

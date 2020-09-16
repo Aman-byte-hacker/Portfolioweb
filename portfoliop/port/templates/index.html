@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block style %}
+<style>
+.head{
+    text-align: center;
+    margin-top:11%;
+    font-family: 'Lobster', cursive;
+    color: aqua;
+    
+}
+.para{
+    text-align: center;
+    text-transform: capitalize;
+    color: burlywood;
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+
+}
+body{
+    color:white;
+    background-color: black;
+    
+}
+.btni{
+    padding: 12px;
+    border-radius:9px;
+    background-color: black;
+    color: green;
+}
+</style>
+
+{% endblock %}
+{% block content %}
+<h1 class="head">AMAN VYAS</h1>
+<p class="para">Full stack web dev && <br> ETHICAL HACKER</p>
+<p style="text-align: center;"><a href="/skills"><button class="btni" type="submit">My Skills</button></a></p>
+<p style="text-align: center;"><a href="/projects"><button class="btni" type="submit">Big-stack-projects</button></a></p>
+{% endblock %}

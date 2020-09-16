@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block style %}
+<style>
+    .head{
+        margin-top: 7px;
+        text-align: center;
+      
+    }
+    .prog{
+        margin-left: 58px;
+        width: 90%;
+        height: 30px;
+    }
+    .btni{
+        padding: 12px;
+        border-radius:9px;
+        background-color: black;
+        color: green;
+    }
+
+    .head4{
+        margin-left: 58px;
+    }
+    @media screen and (max-width: 480px) {
+        .prog{
+            margin-left: 20px;
+        }
+        .head4{
+            margin-left: 20px;
+        }
+      }
+
+</style>
+{% endblock %}
+
+{% block content %}
+<h3 class="head">My Skills</h3>
+<h4 class="head4">HTML</h4>
+<progress id="ios" class="prog" value = "85" max = "100"></progress>
+<h4 class="head4" >CSS</h4>
+<progress id="ios" class="prog" value = "75" max = "100"></progress>
+<h4 class="head4" >js</h4>
+<progress id="ios" class="prog" value = "65" max = "100"></progress>
+<h4 class="head4">Python</h4>
+<progress id="ios" class="prog" value = "75" max = "100"></progress>
+<h4 class="head4" >React</h4>
+<progress id="ios" class="prog" value = "65" max = "100"></progress>
+<h4 class="head4">Django</h4>
+<progress id="ios" class="prog" value = "95" max = "100"></progress>
+<h4 class="head4" >Metaspliot framework</h4>
+<progress id="ios" class="prog" value = "85" max = "100"></progress>
+<h4 class="head4" >Social Engineering</h4>
+<progress id="ios" class="prog" value = "65" max = "100"></progress>
+<h4 class="head4">DNS Spoofing</h4>
+<progress id="ios" class="prog" value = "65" max = "100"></progress>
+<h4 class="head4">Web Scraping</h4>
+<progress id="ios" class="prog" value = "55" max = "100"></progress>
+<p style="text-align: center;"><a href="/certi"><button class="btni" type="submit">View Certificates</button></a></p>
+{% endblock %}
